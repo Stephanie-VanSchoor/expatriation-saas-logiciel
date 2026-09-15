@@ -16,22 +16,20 @@
   .hidden{display:none!important}
   a{color:inherit;text-decoration:none}
   button{font-family:inherit;cursor:pointer;border:none}
-
   .nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
   .nav-inner{max-width:1180px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
   .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--dark)}
   .logo-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--primary),#1a2333);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px}
   .nav-links{display:flex;gap:28px;align-items:center}
-  .nav-links a{font-size:15px;color:var(--gray);font-weight:500;transition:color .2s}
+  .nav-links a{font-size:15px;color:var(--gray);font-weight:500}
   .nav-links a:hover{color:var(--primary)}
   .nav-actions{display:flex;gap:12px;align-items:center}
-  .btn-ghost{background:transparent;color:var(--dark);font-weight:600;font-size:15px;padding:10px 18px;border-radius:10px;transition:background .2s}
+  .btn-ghost{background:transparent;color:var(--dark);font-weight:600;font-size:15px;padding:10px 18px;border-radius:10px}
   .btn-ghost:hover{background:#edf2f7}
-  .btn-solid{background:var(--primary);color:#fff;font-weight:600;font-size:15px;padding:10px 20px;border-radius:10px;transition:background .2s}
+  .btn-solid{background:var(--primary);color:#fff;font-weight:600;font-size:15px;padding:10px 20px;border-radius:10px}
   .btn-solid:hover{background:var(--primary-dark)}
   .btn-solid:disabled{opacity:.6;cursor:not-allowed}
   @media(max-width:860px){.nav-links{display:none}}
-
   .hero{max-width:1180px;margin:0 auto;padding:80px 24px 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
   .badge{display:inline-flex;align-items:center;gap:8px;background:var(--primary-light);color:var(--primary-dark);font-size:13px;font-weight:600;padding:6px 14px;border-radius:30px;margin-bottom:20px}
   .hero h1{font-size:clamp(32px,4.5vw,52px);line-height:1.15;letter-spacing:-.02em;font-weight:700;margin-bottom:20px}
@@ -41,31 +39,27 @@
   .btn-lg{padding:15px 28px;font-size:16px;border-radius:12px}
   .trust{display:flex;gap:24px;font-size:14px;color:var(--gray);flex-wrap:wrap}
   .hero-visual{background:linear-gradient(160deg,#2c7a7b,#1a2333);border-radius:24px;padding:32px;color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
-  .hero-visual::after{content:'';position:absolute;width:200px;height:200px;background:rgba(255,255,255,.08);border-radius:50%;top:-60px;right:-60px}
-  .hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:18px;margin-bottom:14px;backdrop-filter:blur(6px);position:relative;z-index:1}
+  .hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:18px;margin-bottom:14px}
   .hero-card h4{font-size:15px;font-weight:600;margin-bottom:4px}
   .hero-card p{font-size:13px;opacity:.85}
   .progress{height:8px;background:rgba(255,255,255,.2);border-radius:10px;margin-top:10px;overflow:hidden}
-  .progress-bar{height:100%;background:#fff;border-radius:10px;transition:width .4s}
+  .progress-bar{height:100%;background:#fff;border-radius:10px}
   @media(max-width:900px){.hero{grid-template-columns:1fr;gap:40px;padding:50px 24px}}
-
   section{padding:80px 24px}
   .container{max-width:1180px;margin:0 auto}
   .section-head{text-align:center;max-width:640px;margin:0 auto 56px}
   .section-head h2{font-size:clamp(26px,3.5vw,38px);letter-spacing:-.02em;margin-bottom:14px}
   .section-head p{color:var(--gray);font-size:17px}
-
   .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .feature{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:transform .2s,box-shadow .2s}
+  .feature{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px}
   .feature:hover{transform:translateY(-4px);box-shadow:0 12px 28px -10px rgba(0,0,0,.1)}
   .feature-icon{width:48px;height:48px;border-radius:12px;background:var(--primary-light);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px}
   .feature h3{font-size:18px;margin-bottom:8px}
   .feature p{color:var(--gray);font-size:15px}
   @media(max-width:900px){.grid-3{grid-template-columns:1fr}}
-
   .pricing{background:#fff}
   .grid-price{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .price-card{background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+  .price-card{background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column}
   .price-card.featured{border-color:var(--primary);box-shadow:var(--shadow);position:relative;transform:scale(1.03)}
   .price-card.featured::before{content:'Recommandé';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--primary);color:#fff;font-size:12px;font-weight:600;padding:4px 14px;border-radius:20px}
   .price-card h3{font-size:20px;margin-bottom:6px}
@@ -76,35 +70,30 @@
   .price-features li{display:flex;gap:10px;font-size:15px;color:var(--gray);padding:8px 0;border-bottom:1px solid #f0f4f8}
   .price-features li::before{content:'✓';color:var(--primary);font-weight:700}
   @media(max-width:900px){.grid-price{grid-template-columns:1fr}.price-card.featured{transform:none}}
-
   .faq-item{background:#fff;border:1px solid var(--border);border-radius:14px;margin-bottom:12px;overflow:hidden}
   .faq-q{padding:20px 24px;font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
   .faq-q::after{content:'+';font-size:22px;color:var(--primary);transition:transform .2s}
   .faq-item.open .faq-q::after{transform:rotate(45deg)}
   .faq-a{max-height:0;overflow:hidden;transition:max-height .3s;padding:0 24px;color:var(--gray);font-size:15px}
   .faq-item.open .faq-a{max-height:200px;padding-bottom:20px}
-
   .cta-band{background:linear-gradient(160deg,var(--primary),#1a2333);border-radius:24px;padding:64px 40px;text-align:center;color:#fff}
   .cta-band h2{font-size:clamp(26px,3.5vw,38px);margin-bottom:14px}
   .cta-band p{opacity:.9;margin-bottom:28px;font-size:17px}
   .btn-white{background:#fff;color:var(--primary-dark);font-weight:700;padding:15px 32px;border-radius:12px;font-size:16px}
-
   .modal-overlay{position:fixed;inset:0;background:rgba(26,35,51,.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px;z-index:1000}
-  .modal{background:#fff;border-radius:20px;max-width:440px;width:100%;padding:36px;position:relative;box-shadow:var(--shadow);animation:pop .25s ease}
-  @keyframes pop{from{opacity:0;transform:scale(.95) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+  .modal{background:#fff;border-radius:20px;max-width:440px;width:100%;padding:36px;position:relative;box-shadow:var(--shadow)}
   .modal-close{position:absolute;top:16px;right:16px;background:transparent;font-size:22px;color:var(--gray);width:32px;height:32px;border-radius:8px}
   .modal-close:hover{background:#edf2f7}
   .modal h2{font-size:22px;margin-bottom:6px}
   .modal .sub{color:var(--gray);font-size:14px;margin-bottom:22px}
   .modal label{display:block;font-size:13px;color:var(--gray);margin:14px 0 6px;font-weight:500}
-  .modal input{width:100%;padding:12px 16px;font-size:15px;border:1.5px solid var(--border);border-radius:12px;outline:none;transition:border-color .2s,box-shadow .2s;font-family:inherit;color:var(--dark)}
+  .modal input{width:100%;padding:12px 16px;font-size:15px;border:1.5px solid var(--border);border-radius:12px;outline:none;font-family:inherit;color:var(--dark)}
   .modal input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(44,122,123,.15)}
   .modal .btn-primary{width:100%;margin-top:22px;padding:14px;background:var(--primary);color:#fff;font-weight:600;font-size:16px;border-radius:12px}
   .modal .btn-primary:hover{background:var(--primary-dark)}
   .modal-switch{text-align:center;margin-top:18px;font-size:14px;color:var(--gray)}
   .modal-switch a{color:var(--primary);font-weight:600;cursor:pointer}
   .error{color:#e53e3e;font-size:13px;margin-top:10px;min-height:18px}
-
   .dash{max-width:1180px;margin:0 auto;padding:40px 24px}
   .dash-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;flex-wrap:wrap;gap:16px}
   .dash-header h1{font-size:28px;letter-spacing:-.02em}
@@ -112,17 +101,14 @@
   .dash-grid{display:grid;grid-template-columns:2fr 1fr;gap:24px}
   .card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:28px}
   .card h3{font-size:18px;margin-bottom:18px}
-  .stat-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f0f4f8;font-size:15px}
-  .stat-row:last-child{border-bottom:none}
-  .stat-row strong{color:var(--primary)}
   .checklist{list-style:none}
   .checklist li{display:flex;gap:12px;padding:12px 0;font-size:15px;color:var(--gray);cursor:pointer;align-items:center;border-bottom:1px solid #f0f4f8}
-  .checklist li input{width:18px;height:18px;accent-color:var(--primary);cursor:pointer}
+  .checklist li:hover{color:var(--dark)}
+  .checklist li input{width:18px;height:18px;accent-color:var(--primary);cursor:pointer;pointer-events:none}
   .checklist li.done{color:#a0aec0;text-decoration:line-through}
-  .btn-logout{background:transparent;border:1.5px solid var(--border);padding:10px 20px;border-radius:30px;font-weight:600;color:var(--gray);font-size:14px;transition:all .2s}
+  .btn-logout{background:transparent;border:1.5px solid var(--border);padding:10px 20px;border-radius:30px;font-weight:600;color:var(--gray);font-size:14px}
   .btn-logout:hover{background:#edf2f7;color:var(--dark)}
   @media(max-width:900px){.dash-grid{grid-template-columns:1fr}}
-
   .project-form{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}
   .project-form input{flex:1;min-width:180px;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:inherit;font-size:14px;outline:none}
   .project-form input:focus{border-color:var(--primary)}
@@ -130,7 +116,6 @@
   .project-item:last-child{border-bottom:none}
   .project-item h4{font-size:15px;margin-bottom:6px}
   .project-item .meta{font-size:13px;color:var(--gray);margin-bottom:8px}
-
   footer{background:#fff;border-top:1px solid var(--border);padding:40px 24px;text-align:center;color:var(--gray);font-size:14px}
   .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--dark);color:#fff;padding:14px 24px;border-radius:12px;font-size:14px;font-weight:500;opacity:0;transition:all .3s;z-index:2000}
   .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
@@ -158,7 +143,7 @@
     <div>
       <div class="badge">✨ Programme d'accompagnement 2026</div>
       <h1>Réussissez votre <span>expatriation</span> sans stress.</h1>
-      <p class="lead">Visa, logement, banque, assurance santé, école… Expat Pro centralise toutes les démarches et vous guide pas à pas vers votre nouvelle vie à l'étranger.</p>
+      <p class="lead">Visa, logement, banque, assurance santé, école… Expat Pro centralise toutes les démarches et vous guide pas à pas.</p>
       <div class="hero-cta">
         <button class="btn-solid btn-lg" onclick="openModal('signup')">Commencer gratuitement</button>
         <button class="btn-ghost btn-lg" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Découvrir →</button>
@@ -170,62 +155,46 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-card">
-        <h4>📋 Dossier visa · Portugal</h4>
-        <p>Étape 3 sur 5 · Documents validés</p>
-        <div class="progress"><div class="progress-bar" style="width:60%"></div></div>
-      </div>
-      <div class="hero-card">
-        <h4>🏠 Recherche logement</h4>
-        <p>12 annonces correspondant à votre profil</p>
-      </div>
-      <div class="hero-card">
-        <h4>💶 Budget mensuel estimé</h4>
-        <p>1 480 € · Lisbonne, quartier centre</p>
-      </div>
+      <div class="hero-card"><h4>📋 Dossier visa · Portugal</h4><p>Étape 3 sur 5</p><div class="progress"><div class="progress-bar" style="width:60%"></div></div></div>
+      <div class="hero-card"><h4>🏠 Recherche logement</h4><p>12 annonces disponibles</p></div>
+      <div class="hero-card"><h4>💶 Budget mensuel</h4><p>1 480 € · Lisbonne</p></div>
     </div>
   </section>
 
   <section id="features">
     <div class="container">
-      <div class="section-head">
-        <h2>Tout ce qu'il faut pour partir sereinement</h2>
-        <p>Une plateforme pensée par des expatriés, pour les futurs expatriés.</p>
-      </div>
+      <div class="section-head"><h2>Tout ce qu'il faut pour partir sereinement</h2><p>Une plateforme pensée par des expatriés, pour les futurs expatriés.</p></div>
       <div class="grid-3">
-        <div class="feature"><div class="feature-icon">🛂</div><h3>Assistant visa & papiers</h3><p>Checklists personnalisées selon votre destination, rappels automatiques et modèles officiels.</p></div>
-        <div class="feature"><div class="feature-icon">🏡</div><h3>Logement vérifié</h3><p>Partenariats avec agences locales, quartiers recommandés et estimation de loyer en temps réel.</p></div>
-        <div class="feature"><div class="feature-icon">💳</div><h3>Banque & finances</h3><p>Ouverture de compte à distance, comparateur de frais, simulateur de budget et change de devises.</p></div>
-        <div class="feature"><div class="feature-icon">🏥</div><h3>Santé & assurances</h3><p>Comparateur d'assurances expat, réseau de médecins francophones et téléconsultation incluse.</p></div>
-        <div class="feature"><div class="feature-icon">🎓</div><h3>Écoles & famille</h3><p>Écoles internationales, crèches, activités périscolaires et conseils pour une intégration réussie.</p></div>
-        <div class="feature"><div class="feature-icon">🤝</div><h3>Communauté active</h3><p>Échangez avec des expatriés déjà installés, participez à des meetups et trouvez votre réseau local.</p></div>
+        <div class="feature"><div class="feature-icon">🛂</div><h3>Assistant visa & papiers</h3><p>Checklists personnalisées et modèles officiels.</p></div>
+        <div class="feature"><div class="feature-icon">🏡</div><h3>Logement vérifié</h3><p>Agences locales et estimation de loyer.</p></div>
+        <div class="feature"><div class="feature-icon">💳</div><h3>Banque & finances</h3><p>Ouverture de compte à distance et budget.</p></div>
+        <div class="feature"><div class="feature-icon">🏥</div><h3>Santé & assurances</h3><p>Comparateur et téléconsultation incluse.</p></div>
+        <div class="feature"><div class="feature-icon">🎓</div><h3>Écoles & famille</h3><p>Écoles internationales et conseils d'intégration.</p></div>
+        <div class="feature"><div class="feature-icon">🤝</div><h3>Communauté active</h3><p>Échangez avec des expatriés installés.</p></div>
       </div>
     </div>
   </section>
 
   <section id="pricing" class="pricing">
     <div class="container">
-      <div class="section-head">
-        <h2>Des offres simples et transparentes</h2>
-        <p>Choisissez la formule adaptée à votre projet. Sans engagement.</p>
-      </div>
+      <div class="section-head"><h2>Des offres simples et transparentes</h2><p>Sans engagement, résiliable à tout moment.</p></div>
       <div class="grid-price">
         <div class="price-card">
           <h3>Découverte</h3><p class="desc">Pour explorer votre projet</p>
           <div class="price">0€<small>/mois</small></div>
-          <ul class="price-features"><li>Checklist visa basique</li><li>1 destination</li><li>Accès communauté</li><li>Newsletter mensuelle</li></ul>
+          <ul class="price-features"><li>Checklist visa basique</li><li>1 destination</li><li>Accès communauté</li></ul>
           <button class="btn-solid" style="width:100%;padding:13px" onclick="openModal('signup')">Commencer</button>
         </div>
         <div class="price-card featured">
-          <h3>Expat Pro</h3><p class="desc">Le plus choisi par nos membres</p>
+          <h3>Expat Pro</h3><p class="desc">Le plus choisi</p>
           <div class="price">19€<small>/mois</small></div>
-          <ul class="price-features"><li>Tout Découverte</li><li>Destinations illimitées</li><li>Assistant visa complet</li><li>Comparateur logement & banque</li><li>Support prioritaire 7j/7</li></ul>
+          <ul class="price-features"><li>Tout Découverte</li><li>Destinations illimitées</li><li>Assistant visa complet</li><li>Support prioritaire 7j/7</li></ul>
           <button class="btn-solid" style="width:100%;padding:13px" onclick="openModal('signup')">Essai 14 jours</button>
         </div>
         <div class="price-card">
           <h3>Concierge</h3><p class="desc">Accompagnement sur mesure</p>
           <div class="price">89€<small>/mois</small></div>
-          <ul class="price-features"><li>Tout Expat Pro</li><li>Conseiller dédié</li><li>Gestion des démarches</li><li>Recherche logement personnalisée</li><li>Appels visio illimités</li></ul>
+          <ul class="price-features"><li>Tout Expat Pro</li><li>Conseiller dédié</li><li>Gestion des démarches</li><li>Appels visio illimités</li></ul>
           <button class="btn-solid" style="width:100%;padding:13px" onclick="openModal('signup')">Nous contacter</button>
         </div>
       </div>
@@ -234,12 +203,12 @@
 
   <section id="faq">
     <div class="container" style="max-width:800px">
-      <div class="section-head"><h2>Questions fréquentes</h2><p>Tout ce que vous devez savoir avant de vous lancer.</p></div>
+      <div class="section-head"><h2>Questions fréquentes</h2><p>Tout ce que vous devez savoir.</p></div>
       <div>
-        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Puis-je essayer Expat Pro gratuitement ?</div><div class="faq-a"><p>Oui. L'offre Découverte est gratuite à vie, et l'offre Expat Pro inclut un essai de 14 jours sans carte bancaire.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Combien de destinations sont couvertes ?</div><div class="faq-a"><p>Plus de 40 pays documentés en détail : Europe, Amérique du Nord, Asie, Océanie.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Puis-je annuler à tout moment ?</div><div class="faq-a"><p>Absolument. L'abonnement est sans engagement, résiliable en un clic.</p></div></div>
-        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Mes données sont-elles protégées ?</div><div class="faq-a"><p>Oui, conformes RGPD. Vos données sont chiffrées et jamais revendues.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Puis-je essayer gratuitement ?</div><div class="faq-a"><p>Oui, l'offre Découverte est gratuite à vie.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Combien de destinations ?</div><div class="faq-a"><p>Plus de 40 pays documentés.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Puis-je annuler ?</div><div class="faq-a"><p>Oui, en un clic depuis le tableau de bord.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Mes données sont-elles protégées ?</div><div class="faq-a"><p>Conformes RGPD, chiffrées, jamais revendues.</p></div></div>
       </div>
     </div>
   </section>
@@ -248,7 +217,7 @@
     <div class="container">
       <div class="cta-band">
         <h2>Prêt à changer de vie ?</h2>
-        <p>Rejoignez 12 000 expatriés qui ont concrétisé leur projet avec Expat Pro.</p>
+        <p>Rejoignez 12 000 expatriés qui ont concrétisé leur projet.</p>
         <button class="btn-white" onclick="openModal('signup')">Créer mon compte gratuit</button>
       </div>
     </div>
@@ -279,11 +248,11 @@
     <div class="card">
       <h3>Checklist rapide</h3>
       <ul class="checklist" id="checklist">
-        <li onclick="toggleCheck(this)"><input type="checkbox"> Passeport valide 6 mois</li>
-        <li onclick="toggleCheck(this)"><input type="checkbox"> Acte de naissance traduit</li>
-        <li onclick="toggleCheck(this)"><input type="checkbox"> Justificatif de domicile</li>
-        <li onclick="toggleCheck(this)"><input type="checkbox"> Assurance santé internationale</li>
-        <li onclick="toggleCheck(this)"><input type="checkbox"> Ouverture compte bancaire</li>
+        <li data-key="passport" onclick="toggleCheck(this)"><input type="checkbox"> Passeport valide 6 mois</li>
+        <li data-key="birth" onclick="toggleCheck(this)"><input type="checkbox"> Acte de naissance traduit</li>
+        <li data-key="address" onclick="toggleCheck(this)"><input type="checkbox"> Justificatif de domicile</li>
+        <li data-key="insurance" onclick="toggleCheck(this)"><input type="checkbox"> Assurance santé internationale</li>
+        <li data-key="bank" onclick="toggleCheck(this)"><input type="checkbox"> Ouverture compte bancaire</li>
       </ul>
     </div>
   </div>
@@ -311,190 +280,7 @@
 
 <div id="toast" class="toast"></div>
 
-<script>
-/* ============ CONFIG SUPABASE ============ */
-const SUPABASE_URL = 'https://nmodxukdqyczdasvljec.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5tb2R4dWtkcXljemRhc3ZsamVjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk0Mzk2NjcsImV4cCI6MjEwNTAxNTY2N30.l5QM8dqC9mEHZNh25XLuaRNOHs52osLc6-8TDEgCEa0';
-const { createClient } = supabase;
-const sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+<!-- SCRIPT_ICI -->
 
-let authMode = 'signup';
-let currentUser = null;
-
-/* ============ HELPERS ============ */
-function toast(msg){
-  const t = document.getElementById('toast');
-  t.textContent = msg; t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'), 2600);
-}
-
-/* ============ MODAL ============ */
-function openModal(mode){
-  authMode = mode;
-  const overlay = document.getElementById('modalOverlay');
-  document.getElementById('modalTitle').textContent = mode==='signup' ? 'Créer un compte' : 'Connexion';
-  document.getElementById('modalSub').textContent = mode==='signup'
-    ? 'Commencez votre expatriation en 30 secondes.'
-    : 'Ravi de vous revoir sur Expat Pro.';
-  document.getElementById('nameLabel').style.display = mode==='signup' ? 'block' : 'none';
-  document.getElementById('authName').style.display = mode==='signup' ? 'block' : 'none';
-  document.getElementById('authName').required = mode==='signup';
-  document.getElementById('authSubmit').textContent = mode==='signup' ? 'Créer mon compte' : 'Se connecter';
-  document.getElementById('modalSwitch').innerHTML = mode==='signup'
-    ? 'Déjà un compte ? <a onclick="openModal(\'login\')">Se connecter</a>'
-    : 'Pas encore de compte ? <a onclick="openModal(\'signup\')">Créer un compte</a>';
-  document.getElementById('authError').textContent = '';
-  document.getElementById('authForm').reset();
-  overlay.classList.remove('hidden');
-  setTimeout(()=>document.getElementById('authEmail').focus(), 100);
-}
-function closeModal(){ document.getElementById('modalOverlay').classList.add('hidden'); }
-
-/* ============ AUTH ============ */
-async function submitAuth(){
-  const err = document.getElementById('authError');
-  const btn = document.getElementById('authSubmit');
-  err.textContent = '';
-  btn.disabled = true;
-
-  const email = document.getElementById('authEmail').value.trim();
-  const password = document.getElementById('authPassword').value;
-  const name = document.getElementById('authName').value.trim();
-
-  try {
-    if(authMode === 'signup'){
-      const { data, error } = await sb.auth.signUp({
-        email, password,
-        options: { data: { full_name: name } }
-      });
-      if(error) throw error;
-      if(data.user && !data.session){
-        toast('✉️ Vérifiez votre e-mail pour confirmer votre compte.');
-        closeModal();
-        return;
-      }
-      toast('🎉 Bienvenue sur Expat Pro !');
-    } else {
-      const { error } = await sb.auth.signInWithPassword({ email, password });
-      if(error) throw error;
-      toast('👋 Connexion réussie');
-    }
-    closeModal();
-  } catch(e){
-    err.textContent = e.message || 'Une erreur est survenue.';
-  } finally {
-    btn.disabled = false;
-  }
-}
-
-async function handleLogout(){
-  await sb.auth.signOut();
-  currentUser = null;
-  toast('Déconnexion réussie');
-}
-
-/* ============ UI : AUTH STATE ============ */
-function updateUI(session){
-  const landing = document.getElementById('landing');
-  const dashboard = document.getElementById('dashboard');
-  const navActions = document.getElementById('navActions');
-
-  if(session){
-    currentUser = session.user;
-    landing.classList.add('hidden');
-    dashboard.classList.remove('hidden');
-    document.getElementById('userName').textContent =
-      currentUser.user_metadata?.full_name || currentUser.email.split('@')[0];
-    document.getElementById('userEmail').textContent = currentUser.email;
-    navActions.innerHTML = `<button class="btn-solid" onclick="handleLogout()">Déconnexion</button>`;
-    loadProjects();
-  } else {
-    landing.classList.remove('hidden');
-    dashboard.classList.add('hidden');
-    navActions.innerHTML = `
-      <button class="btn-ghost" onclick="openModal('login')">Connexion</button>
-      <button class="btn-solid" onclick="openModal('signup')">Essai gratuit</button>`;
-  }
-}
-
-/* ============ PROJETS (CRUD SUPABASE) ============ */
-async function loadProjects(){
-  const list = document.getElementById('projectList');
-  list.innerHTML = '<p style="color:var(--gray);font-size:14px">Chargement…</p>';
-
-  const { data, error } = await sb
-    .from('projets')
-    .select('*')
-    .order('created_at', { ascending: false });
-
-  if(error){
-    list.innerHTML = `<p style="color:#e53e3e;font-size:14px">Erreur : ${error.message}</p>`;
-    return;
-  }
-  if(!data || data.length === 0){
-    list.innerHTML = '<p style="color:var(--gray);font-size:14px">Aucun projet pour le moment. Créez-en un !</p>';
-    return;
-  }
-  list.innerHTML = data.map(p => `
-    <div class="project-item">
-      <h4>${escapeHtml(p.nom)}</h4>
-      <div class="meta">📍 ${escapeHtml(p.destination || 'Destination à définir')} · ${p.progression}%</div>
-      <div class="progress" style="background:#edf2f7">
-        <div class="progress-bar" style="width:${p.progression}%;background:var(--primary)"></div>
-      </div>
-      <button class="btn-ghost" style="margin-top:8px;font-size:13px;padding:6px 12px;color:#e53e3e"
-        onclick="deleteProject('${p.id}')">Supprimer</button>
-    </div>
-  `).join('');
-}
-
-async function createProject(){
-  const nom = document.getElementById('projectName').value.trim();
-  const dest = document.getElementById('projectDest').value.trim();
-  if(!nom){ toast('Veuillez saisir un nom de projet'); return; }
-
-  const { error } = await sb.from('projets').insert({
-    user_id: currentUser.id,
-    nom,
-    destination: dest || null,
-    progression: 0
-  });
-
-  if(error){ toast('❌ ' + error.message); return; }
-  document.getElementById('projectName').value = '';
-  document.getElementById('projectDest').value = '';
-  toast('✅ Projet créé');
-  loadProjects();
-}
-
-async function deleteProject(id){
-  if(!confirm('Supprimer ce projet ?')) return;
-  const { error } = await sb.from('projets').delete().eq('id', id);
-  if(error){ toast('❌ ' + error.message); return; }
-  toast('🗑️ Projet supprimé');
-  loadProjects();
-}
-
-/* ============ CHECKLIST UI ============ */
-function toggleCheck(li){
-  const cb = li.querySelector('input[type="checkbox"]');
-  cb.checked = !cb.checked;
-  li.classList.toggle('done', cb.checked);
-}
-
-function escapeHtml(s){
-  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-
-/* ============ INIT ============ */
-(async () => {
-  const { data: { session } } = await sb.auth.getSession();
-  updateUI(session);
-
-  sb.auth.onAuthStateChange((_event, session) => {
-    updateUI(session);
-  });
-})();
-</script>
 </body>
 </html>
